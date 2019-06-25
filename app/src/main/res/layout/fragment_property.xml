@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".property">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl1">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:background="#B3E5FC"/>
+
+        <TextView
+            android:layout_width="218dp"
+            android:id="@+id/txtbedroom"
+            android:layout_below="@+id/l1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="No. of Bedrooms:"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:id="@+id/btnbhk"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txtbedroom"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn1bhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnbhk"
+                android:background="@drawable/btn"
+                android:fontFamily="serif"
+
+                android:text="1 bhk"
+                android:textColor="#1976ad"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn2bhk"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn"
+                android:fontFamily="serif"
+                android:text="2 bhk"
+                android:textColor="#1976ad"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn3bhk"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn"
+                android:fontFamily="serif"
+                android:text="3 bhk"
+                android:textColor="#1976ad"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn4bhk"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn"
+                android:fontFamily="serif"
+                android:text="4 bhk"
+                android:textColor="#1976ad"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_below="@id/btnbhk"
+            android:layout_marginTop="20dp"
+          android:layout_centerInParent="true"
+            android:hint="Type the location"
+            android:textColorHint="#000000" />
+
+
+        <TextView
+            android:id="@+id/txtprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbg"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+
+            android:text="Price"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:fontFamily="serif"
+            tools:text="Price" />
+
+        <Spinner
+            android:id="@+id/drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtprice"
+            android:prompt="@string/buyprompt"
+            android:entries="@array/buy"
+            android:layout_centerInParent="true"
+
+            />
+
+        <TextView
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpropertytype"
+            android:layout_below="@+id/edtlocation"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="Property type"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rbg"
+            android:layout_below="@id/txtpropertytype">
+
+        <RadioButton
+            android:id="@+id/rbtnbu"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txtpropertytype"
+            android:layout_weight="1"
+            android:text="ready to move"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnhouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/rbtnbu"
+            android:layout_weight="1"
+            android:text="under construction"
+            android:textSize="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="search"
+            android:onClick="propertysubmit"
+            android:background="@drawable/btn"
+            android:layout_below="@id/drop"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

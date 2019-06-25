@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearl"
+        android:layout_width="500dp"
+        android:layout_height="56dp"
+        android:background="#B3E5FC"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:layout_below="@id/linearl"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:fontFamily="serif"
+        android:id="@+id/txttitile"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/txt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/txttitile"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="serif"
+        android:text="SIDDHI REAL ESTATE is a real-estate service committed to helping you make wise and profitable decisions related to buying, selling, renting and leasing of properties."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/txt1"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="serif"
+        android:text="SIDDHI REAL ESTATE will provide a fresh new approach to our esteemed users to search for properties to buy or rent, and list their properties for selling or leasing."
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:text="SIDDHI REAL ESTATE promises to be the most preferred way of finding your dream property, and we are committed to help you make a wiser property decision, as a buyer or a seller. "
+        android:textColor="#000000"/>
+
+</RelativeLayout>
+</ScrollView>

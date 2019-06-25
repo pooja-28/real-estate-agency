@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearl"
+        android:layout_width="500dp"
+        android:layout_height="56dp"
+        android:background="#B3E5FC"
+        android:orientation="horizontal">
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contact us"
+    android:layout_below="@id/linearl"
+    android:layout_centerHorizontal="true"
+    android:textSize="35dp"
+    android:fontFamily="serif"
+    android:id="@+id/txttitile"
+    android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@id/txttitile"
+        android:id="@+id/txtaddress"
+        android:textSize="25dp"
+        android:drawablePadding="15dp"
+        android:textColor="#000000"
+        android:fontFamily="serif"
+        android:drawableBottom="@drawable/ic_location_on_black_24dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textMultiLine"
+    android:paddingLeft="15dp"
+    android:id="@+id/txtad"
+    android:layout_below="@id/txtaddress"
+    android:textColor="#000000"
+    android:textSize="20dp"
+    android:fontFamily="serif"
+    android:text="Shop no. 2 , Dosti Venus ,M.T.V road, near union bank, wadala east , Mumbai-400037. "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtad"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:paddingTop="20dp"
+        android:id="@+id/txtno"
+        android:drawablePadding="20dp"
+        android:drawableBottom="@drawable/ic_phone_black_24dp"
+        android:textColor="#000000"
+        android:text="Phone number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="022-24182002"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="serif"
+        android:id="@+id/txtnum"
+        android:layout_below="@id/txtno"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="calling time between 10am - 8pm "
+        android:layout_below="@id/txtnum"
+        android:paddingTop="5dp"
+        android:id="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="(Monday closed)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+</RelativeLayout>

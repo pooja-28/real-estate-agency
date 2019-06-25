@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativel1"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/relativel2"
+        android:layout_width="500dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#B3E5FC"/>
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/cardadd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="151dp"
+        android:background="#E1F5FE"
+        card_view:cardElevation="8dp"
+        card_view:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#E1F5FE"
+                android:drawableTop="@drawable/add"
+                android:onClick="addbtn"
+                android:text="Add Property"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="151dp"
+        android:background="#E1F5FE"
+        card_view:cardElevation="8dp"
+        card_view:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/edit"
+             android:textSize="20dp"
+                android:textAllCaps="false"
+                android:background="#E1F5FE"
+                android:onClick="editbtn"
+                android:id="@+id/editbtn"
+                android:text="Edit Property" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        card_view:cardElevation="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="22dp"
+        android:background="#E1F5FE"
+        card_view:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/search"
+              android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="#E1F5FE"
+                android:onClick="searchbtn"
+                android:id="@+id/searchbtn"
+                android:text="Search Property" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="18dp"
+        android:background="#E1F5FE"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:drawableTop="@drawable/people"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#E1F5FE"
+                android:id="@+id/profilebtn"
+                android:onClick="profilebtn"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:text="Manage Profile" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

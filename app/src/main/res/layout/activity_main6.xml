@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl1"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="500dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#B3E5FC">
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:queryHint="Search editing property"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="Buy"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnrental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnbuy"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="Rental"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnproperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnbuy"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="Property"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnbuy"
+        android:layout_marginTop="130dp"
+        android:fontFamily="serif"
+        android:text="Rooms"
+        android:textSize="20dp"
+        android:id="@+id/txtroom"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:id="@+id/btn1bhk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/txtroom"
+        android:layout_alignTop="@+id/btn2bhk"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="1 bhk"
+        android:textColor="#1976ad"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn2bhk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edtprice"
+        android:layout_marginTop="191dp"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="2 bhk"
+        android:textColor="#1976ad"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn3bhk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/btn1bhk"
+        android:layout_toStartOf="@+id/btnproperty"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="3 bhk"
+        android:textColor="#1976ad"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn4bhk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnproperty"
+        android:layout_alignTop="@+id/btn1bhk"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="4 bhk"
+        android:textColor="#1976ad"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtprice"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/txtprice"
+        android:layout_toStartOf="@+id/btnrental" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtprice"
+        android:layout_centerHorizontal="true"
+        android:text="bhk"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtroom"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="221dp"
+        android:text="Price"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:fontFamily="serif"
+        tools:text="Price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnbuy"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="serif"
+        android:text="Property type"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+
+    <RadioButton
+        android:id="@+id/rbtnbu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnbuy"
+        android:layout_marginBottom="101dp"
+        android:layout_weight="1"
+        android:text="Apartment"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/rbtncommercial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/rbtnbu"
+        android:layout_marginEnd="73dp"
+        android:layout_weight="1"
+        android:text="Commercial"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/rbtnhouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnbuy"
+        android:layout_below="@+id/rbtnbu"
+        android:layout_marginTop="-101dp"
+        android:layout_weight="1"
+        android:text="villa/house"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn"
+        android:fontFamily="serif"
+        android:text="Submit"
+        android:onClick="submit"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+
+
+</RelativeLayout>

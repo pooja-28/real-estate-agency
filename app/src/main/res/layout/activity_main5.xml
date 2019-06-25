@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/relative11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+            <LinearLayout
+                android:id="@+id/linearl"
+                android:layout_width="500dp"
+                android:layout_height="56dp"
+                android:background="#B3E5FC"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Property Profile"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/txtprofile"
+    android:id="@+id/recycle"/>
+</RelativeLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearl"
+                android:layout_width="500dp"
+                android:layout_height="56dp"
+                android:background="#B3E5FC"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/txttitlepro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:fontFamily="serif"
+                android:text="Property information"
+                android:textColor="#039BE5 "
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/txtpropertyfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/rbg"
+                android:layout_alignStart="@+id/txpropertytype"
+                android:layout_marginBottom="-151dp"
+                android:fontFamily="serif"
+                android:paddingLeft="20dp"
+                android:text="Property for:"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="151dp"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbsale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="serif"
+                    android:text="Sale"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rbconst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+
+
+                    android:text="under construction"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+                <RadioButton
+                    android:id="@+id/rbrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:paddingRight="20dp"
+                    android:text="Rent"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txpropertytype"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/rbg"
+               android:layout_centerInParent="true"
+                android:fontFamily="serif"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Property type:"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <CheckBox
+                android:id="@+id/cproperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txpropertytype"
+
+                android:layout_toStartOf="@+id/cvilla"
+                android:fontFamily="serif"
+                android:paddingTop="10dp"
+                android:text="Private housing"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/capt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cproperty"
+                android:layout_below="@+id/cproperty"
+                android:fontFamily="serif"
+                android:paddingTop="5dp"
+                android:text="Apartment"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/cvilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/capt"
+                android:layout_marginEnd="77dp"
+                android:fontFamily="serif"
+                android:paddingTop="5dp"
+                android:text="Villa"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txttitleloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/capt"
+                android:fontFamily="serif"
+              android:layout_marginTop="20dp"
+                android:text="Location"
+                android:textColor="#039BE5"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edtcity"
+                android:layout_alignStart="@+id/txttitlepro"
+                android:fontFamily="serif"
+                android:paddingTop="15dp"
+                android:text="City:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edtcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/cvilla"
+                android:layout_below="@+id/txttitleloc"
+                android:hint="enter city name"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtcity"
+                android:layout_below="@+id/edtcity"
+                android:paddingTop="15dp"
+                android:text="Address:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerbed"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Price"
+                android:fontFamily="serif"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtsqft"
+                android:text="Enter Sqft."
+                android:layout_below="@id/txtprice"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="48dp"
+                android:fontFamily="serif"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtsqft"
+                android:inputType="number"
+                android:layout_below="@id/edtprice"
+                android:layout_alignBaseline="@id/txtsqft"
+                android:layout_marginLeft="200dp"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtprice"
+                android:layout_marginLeft="40dp"
+                android:inputType="number"
+                android:layout_below="@+id/edtaddress"
+                android:layout_toRightOf="@id/txtprice"
+                android:layout_alignBaseline="@id/txtprice"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/price"
+                android:layout_below="@id/spinnerbed"
+                android:layout_toRightOf="@id/edtprice"
+                android:id="@+id/spinnerprice"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBaseline="@id/edtprice"/>
+
+            <EditText
+                android:id="@+id/edtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtaddress"
+                android:hint="enter the address"
+                android:inputType="textMultiLine"
+                android:layout_toRightOf="@id/txtaddress"
+                android:layout_marginLeft="20dp"
+                android:lines="5"
+                android:maxLines="10"
+                android:minLines="1"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:id="@+id/txttitleaddinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtaddress"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+
+                android:text="Additional information"
+                android:textColor="#039be5"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtbedroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txttitleaddinfo"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="serif"
+                android:paddingTop="15dp"
+                android:text="Bedroom :"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select an video"
+                android:textSize="30sp"
+                android:textColor="#039be5"
+                android:fontFamily="serif"
+                android:id="@+id/txtselect"
+                android:onClick="select"
+                android:layout_below="@+id/txtsqft"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"/>
+           <VideoView android:layout_width="350dp"
+               android:layout_height="250dp"
+               android:layout_centerInParent="true"
+               android:layout_below="@id/txtselect"
+               android:id="@+id/video"/>
+
+            <Spinner
+                android:id="@+id/spinnerbed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txttitleaddinfo"
+                android:layout_toRightOf="@id/txtbedroom"
+                android:entries="@array/bhk"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtbuilder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Builders info"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edtbuilder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/txtbuilder"
+                android:layout_below="@id/spinnerbed"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/txtbuilder"
+                android:hint="enter builder info"
+                android:paddingTop="10dp" />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/edtbuilder"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <Button
+                    android:id="@+id/buttonUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnupdate"
+                    android:background="@drawable/btn"
+                    android:layout_weight="1"
+                    android:text="Update" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:onClick="btndelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:layout_weight="1"
+                    android:text="Delete" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

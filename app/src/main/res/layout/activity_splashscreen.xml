@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#e0f7fa"
+        android:elevation="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        app:cardMaxElevation="60dp"
+        android:layout_centerInParent="true">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:src="@drawable/siddhi"
+        android:layout_centerInParent="true"/>
+    </android.support.v7.widget.CardView>>
+
+</RelativeLayout>
