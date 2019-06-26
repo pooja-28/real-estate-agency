@@ -36,7 +36,7 @@ public class Main7Activity extends AppCompatActivity {
         if(mAuth.getCurrentUser()!=null){
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
             String id=user.getUid();
-            if(id.equals("c3lLpvxKDOZmWGlgKSRfjR7RtJc2")){
+            if(id.equals(" your firebase id")){
                 finish();
                 Intent i = new Intent(Main7Activity.this, MainActivity.class);
                 startActivity(i);
